@@ -54,15 +54,12 @@ namespace ProductsApi.Data
         public void Update(ProductModel product)
         {
             var maxId = _context.Products.Max(p => p.Id);
-            var productWithId = new Product()
-            {
-                Id = maxId + 1,
-                Name = product.Name,
-                Price = product.Price,
-                ValidFrom = product.ValidFrom,
-                ValidTo = product.ValidTo
-            };
-            _context.Products.Update(productWithId);
+            var prod = _context.Products.FirstOrDefault(x => x.Id == product.Id);
+            prod.Name = product.Name;
+            prod.Price = product.Price;
+            prod.ValidFrom = product.ValidFrom;
+            prod.ValidTo = product.ValidTo;
+            _context.Update(prod);
             _context.SaveChanges();
         }
         public  List<Product> GetProductsWithPriceInRange(double firstNumber, double secondNumber)
