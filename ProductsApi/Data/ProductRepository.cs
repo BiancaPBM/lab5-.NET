@@ -17,27 +17,16 @@ namespace ProductsApi.Data
             _context = context;
         }
 
-        public void Create(ProductModel product)
-        {
-            var maxId = _context.Products.Max(p => p.Id);
-            var newProduct = new Entities.Product()
-            { Id = maxId, 
-              ValidFrom = product.ValidFrom,
-              Name = product.Name,
-              Price = product.Price,
-              ValidTo = product.ValidTo 
-            };
-            _context.Products.Add(newProduct);
-            _context.SaveChanges();
-        }
+    
 
         public void Delete(int id)
         {
             var productToBeDeleted = _context.Products.First(p => p.Id == id);
-            if (productToBeDeleted == null)
+            if (productToBeDeleted != null)
             {
+                _context.Products.Remove(productToBeDeleted);
             }
-            _context.Products.Remove(productToBeDeleted);
+
             _context.SaveChanges();
         }
 
@@ -51,15 +40,10 @@ namespace ProductsApi.Data
             return _context.Products.FirstOrDefault(p => p.Id == id);
         }
 
-        public void Update(ProductModel product)
+        public void Update(Product product)
         {
-            var maxId = _context.Products.Max(p => p.Id);
-            var prod = _context.Products.FirstOrDefault(x => x.Id == product.Id);
-            prod.Name = product.Name;
-            prod.Price = product.Price;
-            prod.ValidFrom = product.ValidFrom;
-            prod.ValidTo = product.ValidTo;
-            _context.Update(prod);
+
+            _context.Update(product);
             _context.SaveChanges();
         }
         public  List<Product> GetProductsWithPriceInRange(double firstNumber, double secondNumber)

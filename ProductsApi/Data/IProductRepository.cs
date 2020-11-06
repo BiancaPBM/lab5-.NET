@@ -12,8 +12,7 @@ namespace ProductsApi.Data
     {
         public IEnumerable<Product> GetAll();
         public Product GetById(int id);
-        public void Create(ProductModel product);
-        public void Update(ProductModel product);
+        public void Update(Product product);
         public void Delete(int id);
         public List<Product> GetProductsWithPriceInRange(double firstNumber, double secondNumber);
         public List<Product> GetProductsGreaterThanSpecifiedPrice(double price);

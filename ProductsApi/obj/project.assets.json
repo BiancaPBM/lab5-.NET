@@ -8916,11 +8916,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\bpantaru\\Desktop\\things\\my Work\\Introducere in .Net\\lab4\\ProductsApi\\ProductsApi.csproj",
+      "projectUniqueName": "C:\\Users\\bpantaru\\Desktop\\things\\my Work\\Introducere in .Net\\lab5\\ProductsApi\\ProductsApi.csproj",
       "projectName": "ProductsApi",
-      "projectPath": "C:\\Users\\bpantaru\\Desktop\\things\\my Work\\Introducere in .Net\\lab4\\ProductsApi\\ProductsApi.csproj",
+      "projectPath": "C:\\Users\\bpantaru\\Desktop\\things\\my Work\\Introducere in .Net\\lab5\\ProductsApi\\ProductsApi.csproj",
       "packagesPath": "C:\\Users\\bpantaru\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\bpantaru\\Desktop\\things\\my Work\\Introducere in .Net\\lab4\\ProductsApi\\obj\\",
+      "outputPath": "C:\\Users\\bpantaru\\Desktop\\things\\my Work\\Introducere in .Net\\lab5\\ProductsApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

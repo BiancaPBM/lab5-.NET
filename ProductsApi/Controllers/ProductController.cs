@@ -38,7 +38,7 @@ namespace ProductsApi.Controllers
             return Ok(product);
         }
 
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public IActionResult DeleteProduct(int id)
         {
             _repository.Delete(id);
@@ -46,7 +46,7 @@ namespace ProductsApi.Controllers
         }
 
       [HttpPut]
-      public IActionResult UpdateProduct([FromBody] ProductModel product)
+      public IActionResult UpdateProduct([FromBody] Product product)
         {
             _repository.Update(product);
             return StatusCode(204);

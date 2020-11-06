@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "U/rKKz+gdq/xKIgX5VeMGt4H9UAEbrdGT9gr/GoqtwJnhMRa13EMA1ZP1y4jWhUH2sg1zTrcgqZ92Tkp6T461A==",
+  "dgSpecHash": "kEuFpn/VuW3QC0mv1lGOunsYQJN/4N2YqTSyBFUmV+PO7QZG3SDrSyUn0fQB9DcGufGeb4jLarKmaS9Ud21JPQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\bpantaru\\Desktop\\things\\my Work\\Introducere in .Net\\lab4\\ProductsApi\\ProductsApi.csproj",
+  "projectFilePath": "C:\\Users\\bpantaru\\Desktop\\things\\my Work\\Introducere in .Net\\lab5\\ProductsApi\\ProductsApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\bpantaru\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\bpantaru\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",
